@@ -19,6 +19,44 @@ Die Spektraldaten folgen der Orange/Spectroscopy-Konvention: Die
 
 ---
 
+## ⚡ Automatischer Installer (empfohlen)
+
+Dieses Repo enthält `orange-install.py` — ein plattformübergreifendes Tool,
+das **Oranges eigenes Python automatisch findet** und das Add-on korrekt
+installiert (macOS / Windows / Linux):
+
+```bash
+# NMR-Add-on installieren:
+python orange-install.py nmr
+
+# PLS-DA installieren:
+python orange-install.py plsda
+
+# nur zeigen, welches Python erkannt wurde:
+python orange-install.py --show
+
+# bestehende Installation prüfen:
+python orange-install.py --check nmr
+```
+
+Läuft mit **jedem** Python (nur Standardbibliothek). Falls die
+Auto-Erkennung ausnahmsweise nicht greift:
+
+```bash
+python orange-install.py --python /pfad/zum/orange/python
+```
+
+> ▶️ **Direkt ausführen ohne Clone:**
+> ```bash
+> curl -fsSL https://raw.githubusercontent.com/philippweller/orange-nmr-addon/main/orange-install.py -o orange-install.py && python3 orange-install.py nmr
+> ```
+
+Das Tool enthält auch den **Windows-`--no-user`-Fall** automatisch, sodass
+das Add-on in Oranges eigene `site-packages` landet statt in die unsichtbare
+User-Site.
+
+---
+
 ## 📋 Voraussetzungen
 
 | Voraussetzung | Hinweis |
