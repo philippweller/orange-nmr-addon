@@ -23,6 +23,10 @@ setup(
     package_data={
         "oranjenmr": ["widgets/icons/*.svg"],
     },
+    project_urls={
+        "Source": "https://github.com/philippweller/orange-nmr-addon",
+        "Bug Tracker": "https://github.com/philippweller/orange-nmr-addon/issues",
+    },
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Science/Research",
